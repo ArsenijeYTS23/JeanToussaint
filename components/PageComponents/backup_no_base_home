@@ -1,0 +1,433 @@
+<template>
+    <div>
+      <div>
+   <!-- <div style="background-image: url(img/home/5.jpg);" v-bind:style="{height: height + 'px'}" ></div> -->
+   <div style="background:black; height:700px;" v-bind:style="{display: display}">
+     <div style="position:relative; width:15%; top:260px; margin: 0 auto; ">
+     <div class="lds-facebook"><div></div><div></div><div></div></div>
+   </div>
+   </div>
+      <section class="hero-area">
+          <div class="hero-slides owl-carousel">
+
+              <!-- Single Hero Slide -->
+
+
+              <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                  <!-- Slide Img -->
+                  <div class="slide-img bg-img" style="background-image: url('img/home/1.jpg')"></div>
+                  <!-- Slide Content -->
+                  <div class="hero-slides-content text-center">
+                      <h2 style="line-height:1;" data-animation="fadeInUp" data-delay="100ms">Jean Toussaint<span>Jean Toussaint</span></h2>
+                      <h1 style="color:white;" data-animation="fadeInUp" data-delay="300ms"></h1>
+                  </div>
+                  <!-- Big Text -->
+                  <h2 class="big-text">Sax</h2>
+              </div>
+
+              <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                  <!-- Slide Img -->
+                  <div class="slide-img bg-img" style="background-image: url('img/home/2.jpg')"></div>
+                  <!-- Slide Content -->
+                  <div class="hero-slides-content text-center">
+                      <h2 style="line-height:1;" data-animation="fadeInUp" data-delay="100ms">Jazz FM<span>Jazz FM</span></h2>
+                      <h1 style="color:white;" data-animation="fadeInUp" data-delay="300ms">instrumentalist of the year 2019</h1>
+                  </div>
+                  <!-- Big Text -->
+                  <h2 class="big-text">Radio</h2>
+              </div>
+
+              <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                  <!-- Slide Img -->
+                  <div class="slide-img bg-img" style="background-image: url('img/home/3.jpg')"></div>
+                  <!-- Slide Content -->
+                  <div class="hero-slides-content text-center">
+                      <h2 style="line-height:1;" data-animation="fadeInUp" data-delay="100ms">Keeping the message alive<span>Keeping the message alive</span></h2>
+                      <h1 style="color:white;" data-animation="fadeInUp" data-delay="300ms"></h1>
+                  </div>
+                  <!-- Big Text -->
+                  <h2 class="big-text">Jazz</h2>
+              </div>
+
+
+
+
+
+          </div>
+          <!-- bg gradients -->
+          <div class="bg-gradients"></div>
+
+          <!-- Slide Down -->
+          <div class="slide-down" id="scrollDown">
+              <h6>Slide Down</h6>
+              <div class="line"></div>
+          </div>
+      </section>
+    </div>
+    <div class="featured-album-area section-padding-100 clearfix" id="player">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="featured-album-content d-flex flex-wrap">
+
+                        <!-- Album Thumbnail -->
+                        <div class="album-thumbnail h-100 bg-img">
+                      <img src="img/music-player/8.jpg"/>
+                        </div>
+
+                        <!-- Album Songs -->
+                        <div class="album-songs h-100">
+
+                            <!-- Album Info -->
+                            <div class="album-info mb-50 d-flex flex-wrap align-items-center justify-content-between">
+                                <div class="album-title">
+                                    <h6 style="color:white"></h6>
+                                    <h4>from albums:</h4>
+                                </div>
+                                <div class="album-buy-now">
+                                    <!-- <a href="#" class="btn musica-btn">Buy it on Itunes</a> -->
+                                </div>
+                            </div>
+
+                            <div class="album-all-songs">
+
+                                <!-- Music Playlist -->
+                                <div class="music-playlist">
+                                    <!-- Single Song -->
+                                    <div class="single-music active">
+                                        <h6>Interlude for Idris</h6>
+                                        <audio preload="auto" controls>
+                                            <source src="audio/11/3.mp3">
+                                        </audio>
+                                    </div>
+
+                                    <!-- Single Song -->
+                                    <div class="single-music active">
+                                        <h6>Tate Song</h6>
+                                        <audio preload="auto" controls>
+                                            <source src="audio/1/5.mp3">
+                                        </audio>
+                                    </div>
+
+                                    <!-- Single Song -->
+                                    <div class="single-music active">
+                                        <h6>Betcha By Golly Wow</h6>
+                                        <audio preload="auto" controls>
+                                            <source src="audio/5/3.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="single-music active">
+                                        <h6>Island Rhythm</h6>
+                                        <audio preload="auto" controls>
+                                            <source src="audio/4/1.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="single-music active">
+                                        <h6>Round Midnight</h6>
+                                        <audio preload="auto" controls>
+                                            <source src="audio/2/7.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="single-music active">
+                                        <h6>Soho Strut</h6>
+                                        <audio preload="auto" controls>
+                                            <source src="audio/7/6.mp3">
+                                        </audio>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</template>
+
+<script>
+
+    export default {
+      data () {
+          return {
+
+              home_page: {},
+              display:'block'
+          }
+      },
+     //  created(){
+     // this.hero();
+     //  },
+      created(){
+      //  this.height=1000
+        var self=this;
+        setTimeout(function(){
+
+            self.display='none';
+        }, 900);
+        // axios.get('home_page')
+        // .then(response=>this.home_page=response.data)
+        // .then(function(){
+        //
+        //     self.testingmodel();
+        //
+        // });
+
+
+
+
+
+     },
+      updated(){
+
+
+        this.testingmodel();
+
+
+
+},
+methods:{
+
+
+
+	testingmodel:function(){
+   var vm=this;
+    this.$nextTick(function () {
+      'use strict';
+
+      var browserWindow = $(window);
+
+      // :: 1.0 Preloader Active Code
+      browserWindow.on('load', function () {
+          $('.preloader').fadeOut('slow', function () {
+              $(this).remove();
+          });
+      });
+
+      // :: 2.0 Nav Active Code
+      // if ($.fn.classyNav) {
+      //     $('#musicaNav').classyNav();
+      // }
+
+      // :: 3.0 Sliders Active Code
+      if ($.fn.owlCarousel) {
+          var welcomeSlide = $('.hero-slides');
+          var featured_shows = $('.featured-shows-slides');
+          var music_player = $('.music-player-slides');
+          var discography = $('.discography-slides');
+
+          welcomeSlide.owlCarousel({
+              items: 1,
+              margin: 0,
+              loop: true,
+              nav: false,
+              dots: false,
+              autoplay: true,
+              autoplayTimeout: 7000,
+              smartSpeed: 1000,
+              animateIn: 'fadeIn',
+              animateOut: 'fadeOut'
+          });
+
+          welcomeSlide.on('translate.owl.carousel', function () {
+              var slideLayer = $("[data-animation]");
+              slideLayer.each(function () {
+                  var anim_name = $(this).data('animation');
+                  $(this).removeClass('animated ' + anim_name).css('opacity', '0');
+              });
+          });
+
+          welcomeSlide.on('translated.owl.carousel', function () {
+              var slideLayer = welcomeSlide.find('.owl-item.active').find("[data-animation]");
+              slideLayer.each(function () {
+                  var anim_name = $(this).data('animation');
+                  $(this).addClass('animated ' + anim_name).css('opacity', '1');
+              });
+          });
+
+          $("[data-delay]").each(function () {
+              var anim_del = $(this).data('delay');
+              $(this).css('animation-delay', anim_del);
+          });
+
+          $("[data-duration]").each(function () {
+              var anim_dur = $(this).data('duration');
+              $(this).css('animation-duration', anim_dur);
+          });
+
+          featured_shows.owlCarousel({
+              items: 3,
+              margin: 30,
+              loop: true,
+              nav: true,
+              navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+              dots: false,
+              autoplay: true,
+              autoplayTimeout: 5000,
+              smartSpeed: 600,
+              responsive: {
+                  0: {
+                      items: 1
+                  },
+                  768: {
+                      items: 2
+                  },
+                  992: {
+                      items: 3
+                  }
+              }
+          });
+
+          music_player.owlCarousel({
+              items: 3,
+              margin: 45,
+              loop: true,
+              nav: false,
+              dots: false,
+              autoplay: true,
+              autoplayTimeout: 5000,
+              smartSpeed: 750,
+              responsive: {
+                  0: {
+                      items: 1
+                  },
+                  992: {
+                      items: 2
+                  },
+                  1200: {
+                      items: 3
+                  }
+              }
+          });
+
+          discography.owlCarousel({
+              items: 6,
+              margin: 30,
+              loop: true,
+              nav: false,
+              dots: false,
+              autoplay: true,
+              autoplayTimeout: 5000,
+              smartSpeed: 600,
+              responsive: {
+                  0: {
+                      items: 2
+                  },
+                  768: {
+                      items: 4
+                  },
+                  992: {
+                      items: 6
+                  }
+              }
+          });
+      }
+
+      // :: 4.0 ScrollUp Active Code
+      if ($.fn.scrollUp) {
+          browserWindow.scrollUp({
+              scrollSpeed: 1500,
+              scrollText: '<i class="fa fa-angle-up"></i>'
+          });
+      }
+
+      // :: 5.0 CounterUp Active Code
+      if ($.fn.counterUp) {
+          $('.counter').counterUp({
+              delay: 10,
+              time: 2000
+          });
+      }
+
+      // :: 6.0 Sticky Active Code
+      if ($.fn.sticky) {
+          $(".musica-main-menu").sticky({
+              topSpacing: 0
+          });
+      }
+
+      // :: 7.0 Progress Bar Active Code
+      if ($.fn.circleProgress) {
+          $('#circle').circleProgress({
+              size: 160,
+              emptyFill: "rgba(0, 0, 0, .0)",
+              fill: '#cc1573',
+              thickness: '4',
+              reverse: true
+          });
+          $('#circle2').circleProgress({
+              size: 160,
+              emptyFill: "rgba(0, 0, 0, .0)",
+              fill: '#cc1573',
+              thickness: '4',
+              reverse: true
+          });
+          $('#circle3').circleProgress({
+              size: 160,
+              emptyFill: "rgba(0, 0, 0, .0)",
+              fill: '#cc1573',
+              thickness: '4',
+              reverse: true
+          });
+          $('#circle4').circleProgress({
+              size: 160,
+              emptyFill: "rgba(0, 0, 0, .0)",
+              fill: '#cc1573',
+              thickness: '4',
+              reverse: true
+          });
+      }
+
+      // :: 8.0 audioPlayer Active Code
+      if ($.fn.audioPlayer) {
+          $('audio').audioPlayer();
+      }
+
+      // :: 9.0 Tooltip Active Code
+      if ($.fn.tooltip) {
+          $('[data-toggle="tooltip"]').tooltip()
+      }
+
+      // :: 10.0 niceScroll Active Code
+      if ($.fn.niceScroll) {
+          $(".album-all-songs").niceScroll({
+              background: "#fff"
+          });
+      }
+
+      // :: 11.0 ScrollDown Active Code
+      $("#scrollDown").on('click', function () {
+          $('html, body').animate({
+              scrollTop: $("#player").offset().top - 15
+          }, 1500);
+      });
+
+      // :: 12.0 prevent default a click
+      $('a[href="#"]').on('click', function ($) {
+          $.preventDefault();
+      });
+
+
+        //  alert('aaaaa');
+
+  });
+
+	},
+  hero:function(){
+    axios.get('home_page')
+    .then(response=>this.home_page=response.data)
+    .then(function(data){
+    // alert('cre');
+    });
+  },
+
+}
+
+    }
+</script>
